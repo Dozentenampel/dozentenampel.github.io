@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang = "de">
+  <head>
+    <title>Dozentenampel</title>
+	  <!-- Global site tag (gtag.js) - Google Analytics -->
+	  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HGQ6XDT6P1"></script>
+	  <script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  
+		  gtag('config', 'G-HGQ6XDT6P1');
+	  </script>
+	  <style>
+		  table, th, td {
+  			border: thin solid black;
+  			border-collapse: collapse;
+		  }
+		  .dot {
+			  height: 25px;
+			  width: 25px;
+			  background-color: grey;
+			  border-radius: 50%;
+			  display: inline-block;
+		 }
+	 </style>
+  </head>
+  <body>
+	  <table>
+		  <tr>
+			  <th> Anwesenheit </th>
+			  <th> Dozent </th>
+		  <tr>
+			  <td> 
+				  <span class="dot" style="background-color: green;"></span>
+			  </td>
+			  <td>
+				  Dozent 1
+			  </td>
+		  </tr>
+		  <tr>
+			  <td> 
+				  <span class="dot" style="background-color: yellow;"></span>
+			  </td>
+			  <td>
+				  Dozent 2
+			  </td>
+		  </tr>
+		  <tr>
+			  <td> 
+			  	<span class="dot" style="background-color: red;"></span>
+			  </td>
+			  <td>
+				  Dozent 3
+			  </td>
+		  </tr>
+	  </table>
+	  <!-- Idee: Rote und grüne Leuchten in der ersten Spalte/ alternativ Felder farbig passend zum Status hinterlegen -->
+	  <!-- Punkte können mit dots eingefügt werden https://www.w3schools.com/howto/howto_css_circles.asp -->
+	  <!-- Hintergrundfarbe kann man mit background-color ändern. Hierzu müsste man eine Variable einfügen, die dann die entsprechende Farbe auslöst-->
+	  <!-- Aufrufen von Dozentendetails per Mouse over im extra Feld. https://www.w3schools.com/jsref/event_onmouseover.asp mit der Funktion und zu jedem Dozenten zugehörigen VAriablene um zugehörige Informationen abzurufen-->
+	  <!-- Alternativ kann man mit dem titel arbeiten https://wiki.selfhtml.org/wiki/CSS/Tutorials/Tooltips_mit_CSS-->
+	  <!-- im head kann man im Script mit funktion und darin mit variablen arbeiten-->
+  </body>
+</html>
